@@ -1,4 +1,3 @@
-
 FROM apache/superset:latest
 
 # Install necessary dependencies

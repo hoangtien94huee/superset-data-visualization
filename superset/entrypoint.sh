@@ -1,4 +1,3 @@
-
 #!/bin/bash
 
 # Wait for database to be ready
