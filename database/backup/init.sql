@@ -5,6 +5,7 @@ CREATE TABLE sl_schema.sl_data (
     mental_health_history_description TEXT,
     living_conditions_description TEXT,
     academic_performance_description TEXT,
+    gender TEXT,
     anxiety_level INT,
     self_esteem INT,
     mental_health_history INT,
@@ -30,5 +31,18 @@ CREATE TABLE sl_schema.sl_data (
 
 COPY sl_schema.sl_data
 FROM '/dataset/StressLevelDataset.csv'
+DELIMITER ','
+CSV HEADER;
+
+
+
+CREATE TABLE sl_schema.sl_data1 (
+    feature TEXT,
+    factor TEXT,
+    importance FLOAT
+);
+
+COPY sl_schema.sl_data1
+FROM '/dataset/Test.csv'
 DELIMITER ','
 CSV HEADER;
